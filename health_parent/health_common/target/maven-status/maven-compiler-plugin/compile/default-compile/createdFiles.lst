@@ -1,0 +1,14 @@
+com\yuechuan\pojo\Menu.class
+com\yuechuan\pojo\Role.class
+com\yuechuan\pojo\User.class
+com\yuechuan\pojo\CheckGroup.class
+com\yuechuan\entity\PageResult.class
+com\yuechuan\pojo\Permission.class
+com\yuechuan\entity\Result.class
+com\yuechuan\constant\MessageConstant.class
+com\yuechuan\entity\QueryPageBean.class
+com\yuechuan\pojo\Member.class
+com\yuechuan\pojo\CheckItem.class
+com\yuechuan\pojo\Setmeal.class
+com\yuechuan\pojo\OrderSetting.class
+com\yuechuan\pojo\Order.class
