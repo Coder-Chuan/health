@@ -26,6 +26,7 @@ public class CheckItemServiceImpl implements CheckItemService {
      * @param checkItem
      */
     @Override
+    @Transactional(readOnly = false,propagation = Propagation.REQUIRED)
     public void add(CheckItem checkItem) {
         checkItemDao.add(checkItem);
     }
@@ -68,7 +69,17 @@ public class CheckItemServiceImpl implements CheckItemService {
      * @param id
      */
     @Override
+    @Transactional(readOnly = false,propagation = Propagation.REQUIRED)
     public void deleteById(Integer id) {
         checkItemDao.deleteById(id);
+    }
+
+    /**
+     *获取所有检查项
+     * @return
+     */
+    @Override
+    public List<CheckItem> findCheckItemList() {
+        return checkItemDao.findAll();
     }
 }

@@ -36,9 +36,9 @@ public class CheckItemController {
     }
 
     @RequestMapping("/findById")
-    public Result findById(String id) {
+    public Result findById(Integer id) {
         try{
-            CheckItem checkItem = checkItemService.findById(Integer.parseInt(id));
+            CheckItem checkItem = checkItemService.findById(id);
             return new Result(true,MessageConstant.QUERY_CHECKITEM_SUCCESS,checkItem);
         }catch(Exception e){
             e.printStackTrace();
@@ -58,10 +58,10 @@ public class CheckItemController {
     }
 
     @RequestMapping("/deleteById.do")
-    public Result deleteById(String id) {
+    public Result deleteById(Integer id) {
         System.out.println("进入方法");
         try{
-            checkItemService.deleteById(Integer.parseInt(id));
+            checkItemService.deleteById(id);
             return new Result(true,MessageConstant.DELETE_CHECKITEM_SUCCESS);
         }catch(Exception e){
             e.printStackTrace();

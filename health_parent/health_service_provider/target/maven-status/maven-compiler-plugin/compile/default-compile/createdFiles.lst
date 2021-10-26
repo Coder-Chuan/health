@@ -2,3 +2,4 @@ com\yuechuan\dao\CheckItemDao.class
 com\yuechuan\dao\CheckGroupDao.class
 com\yuechuan\service\impl\CheckGroupServiceImpl.class
 com\yuechuan\service\impl\CheckItemServiceImpl.class
+com\yuechuan\dao\CheckGroupAndCheckItemDao.class

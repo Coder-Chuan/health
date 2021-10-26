@@ -6,6 +6,8 @@ import com.yuechuan.entity.PageResult;
 import com.yuechuan.entity.QueryPageBean;
 import com.yuechuan.pojo.CheckItem;
 
+import java.util.List;
+
 
 public interface CheckItemService {
     /**
@@ -39,4 +41,10 @@ public interface CheckItemService {
      * @param id
      */
     public void deleteById(Integer id);
+
+    /**
+     * 获取所有检查项
+     * @return
+     */
+    public List<CheckItem> findCheckItemList();
 }

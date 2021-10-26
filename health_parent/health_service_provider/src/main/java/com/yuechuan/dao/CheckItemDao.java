@@ -18,6 +18,11 @@ public interface CheckItemDao {
             "values(#{code},#{name},#{sex},#{age},#{price},#{type},#{attention},#{remark})")
     public void add(CheckItem checkItem);
 
+    /**
+     * 查询分页检查项
+     * @param queryString
+     * @return
+     */
     @Select("<script>" +
                 "select " +
                 "id,code,name,sex,age,price,type,attention,remark " +
@@ -30,7 +35,10 @@ public interface CheckItemDao {
     public List<CheckItem> findPage(@Param("queryString") String queryString);
 
 
-
+    /**
+     * 修改检查项
+     * @param checkItem
+     */
     @Update("<script>" +
             "update " +
             "t_checkitem " +
@@ -48,15 +56,33 @@ public interface CheckItemDao {
             "</script>")
     public void update(CheckItem checkItem);
 
+    /**
+     * 根据id删除检查项
+     * @param id
+     * @return
+     */
     @Select("select " +
             "id,code,name,sex,age,price,type,attention,remark " +
             "from " +
-            "t_checkItem " +
+            "t_checkitem " +
             "where " +
             "id = #{id}")
     public CheckItem findById(Integer id);
 
+    /**
+     * 根据id删除检查项
+     * @param id
+     */
     @Delete("delete from t_checkitem where id = #{id}")
     public void deleteById(Integer id);
 
+    /**
+     * 获取所有检查项
+     * @return
+     */
+    @Select("select " +
+            "id,code,name,sex,age,price,type,attention,remark " +
+            "from " +
+            "t_checkitem")
+    public List<CheckItem> findAll();
 }
