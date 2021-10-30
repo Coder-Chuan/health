@@ -48,4 +48,9 @@ public interface CheckGroupService {
      */
     public void delete(Integer checkGroupId);
 
+    /**
+     * 获取检查组集合
+     * @return
+     */
+    public List<CheckGroup> findCheckGroupList();
 }

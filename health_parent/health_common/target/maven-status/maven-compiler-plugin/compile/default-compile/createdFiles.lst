@@ -8,7 +8,9 @@ com\yuechuan\entity\Result.class
 com\yuechuan\constant\MessageConstant.class
 com\yuechuan\entity\QueryPageBean.class
 com\yuechuan\pojo\Member.class
+com\yuechuan\constant\RedisConstant.class
 com\yuechuan\pojo\CheckItem.class
 com\yuechuan\pojo\Setmeal.class
 com\yuechuan\pojo\OrderSetting.class
+com\yuechuan\util\QiniuUtils.class
 com\yuechuan\pojo\Order.class

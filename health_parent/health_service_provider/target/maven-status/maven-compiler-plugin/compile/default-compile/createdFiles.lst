@@ -1,4 +1,7 @@
+com\yuechuan\dao\SetMealDao.class
 com\yuechuan\dao\CheckItemDao.class
+com\yuechuan\dao\SetmealAndCheckgroupDao.class
+com\yuechuan\service\impl\SetMealServiceImpl.class
 com\yuechuan\dao\CheckGroupDao.class
 com\yuechuan\service\impl\CheckGroupServiceImpl.class
 com\yuechuan\service\impl\CheckItemServiceImpl.class

@@ -63,4 +63,10 @@ public interface CheckGroupDao {
             "id = #{checkGroupId}")
     public void delete(Integer checkGroupId);
 
+    @Select("select " +
+            "id,code,name,helpCode,sex,remark,attention " +
+            "from " +
+            "t_checkgroup ")
+    public List<CheckGroup> findAll();
+
 }
